@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="/assets/infuselogo_circle_image.png" type="image/x-icon">
+    <title>IN/Fuse Cafe</title>
+</head>
+
+    <!-- php connection -->
+<form action="order_transaction.php" method="POST">
+<form action="login_signup.php" method="POST">
+
+<body>
+    <!-- HEADER SECTION CODE: -->
+    <header class="header">
+        <a href="#home" class="logo">
+            <img src="/assets/infuselogo_circle_image.png" alt="in/fuse logo">
+        <span class="logo-text">IN<span class="logo-slash">/</span>Fuse Cafe</span>
+        </a>
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#product">Products</a>
+            <a href="#menu">Menu</a>
+            <a href="#order">Order</a>
+            <a href="#about">About</a>
+            <a href="#testimonial">Testimonial</a>
+            <a href="#contactUs">Contact Us</a>
+            <a href="#login/signup">Login/Signup</a>
+        </nav>
+    </header>
+
+    <!-- HOME SECTION CODE: -->
+    <section class="home" id="home">
+        <div class="content"> <!-- START OF DIV FOR CONTENT: -->
+            <h2>Where Ideas and Coffee Infuse.</h2>
+            <br>
+            <p>IN/Fuse Cafe is a cozy, creative space where coffee meets community and inspiration flows freely. 
+                The name reflects our passion for infusing bold flavors with meaningful connections, blending taste, 
+                culture, and comfort in every cup. Whether you're here to work, unwind, or connect, IN/Fuse Cafe is 
+                your daily blend of energy and atmosphere.</p>
+        </div> <!-- END OF DIV FOR CONTENT: -->
+    </section>
+
+    <!-- PRODUCTS SECTION CODE: -->
+<section class="products-section" id="product">
+    <h2 class="product-title">IN-Store Products</h2>
+    <div class="products-grid">
+        <div class="product-card">
+            <img src="https://forwellness.com/cdn/shop/files/wb-med-white.jpg?v=1696788758" alt="A Whole Bean Coffee" class="product-image">
+            <h3 class="product-name">Whole Bean Coffee</h3>
+            <p class="product-desc">Freshly roasted whole beans for a rich, customizable brewing experience.</p>
+            <span class="product-price">₱350.00</span>
+        </div>
+        <div class="product-card">
+            <img src="https://images.deliveryhero.io/image/darkstores/nv-global-catalog/ph/5fa0928f-e579-491f-a7e8-7d749cd78dbc.png?height=480" alt="Nescafe Aromatico" class="product-image">
+            <h3 class="product-name">Nescafe Aromatico</h3>
+            <p class="product-desc">A bold and aromatic instant coffee with a deep, satisfying flavor.</p>
+            <span class="product-price">₱550.00</span>
+        </div>
+        <div class="product-card">
+            <img src="https://de2wfhoo6xqi5.cloudfront.net/size/600/79f/001/c348af43b7d5ce67cc2d7a5a32e1b23d7f.jpg" alt="Nescafe Espresso" class="product-image">
+            <h3 class="product-name">Nescafe Espresso</h3>
+            <p class="product-desc">Smooth and intense, this instant espresso delivers a quick, café-style kick.</p>
+            <span class="product-price">₱625.00</span>
+        </div>
+        <div class="product-card">
+            <img src="https://m.media-amazon.com/images/I/81kH076e9aL._SL1500_.jpg" alt="Starbucks Breakfast Blend" class="product-image">
+            <h3 class="product-name">Starbucks Breakfast Blend</h3>
+            <p class="product-desc">A light, crisp roast with bright citrus notes perfect for your morning cup.</p>
+            <span class="product-price">₱620.00</span>
+        </div>
+        <div class="product-card">
+            <img src="https://i5.walmartimages.com/seo/Starbucks-by-Nespresso-Decaf-Espresso-Roast-Capsules-60-Count_ee4c490d-8170-4ca3-a280-d29340553773.b61d400ec3af3e5fdf2b0f4f74b00232.jpeg" alt="Starbucks Espresso" class="product-image">
+            <h3 class="product-name">Starbucks Espresso Capsules</h3>
+            <p class="product-desc">Convenient capsules packed with full-bodied espresso flavor and a smooth finish.</p>
+            <span class="product-price">₱3127.86</span>
+        </div>
+        <div class="product-card">
+            <img src="https://m.media-amazon.com/images/I/81sjSoBGxHL._AC_SL1500_.jpg" alt="Nespresso" class="product-image">
+            <h3 class="product-name">Nespresso Capsules</h3>
+            <p class="product-desc">Premium single-serve capsules offering a variety of rich and aromatic blends.</p>
+            <span class="product-price">₱2987.00</span>
+        </div>
+        <div class="product-card">
+            <img src="https://upgrounds.com/cdn/shop/products/UpgroundsforShopee-01.jpg?v=1630871998" alt="Arabica (Sagada)" class="product-image">
+            <h3 class="product-name">Arabica (Sagada)</h3>
+            <p class="product-desc">A locally grown Sagada Arabica with a smooth, earthy profile and mild acidity.</p>
+            <span class="product-price">₱620.00</span>
+        </div>
+        <div class="product-card">
+            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/6948a821077263.562fb16324b6a.jpg" alt="Coffee Holder" class="product-image">
+            <h3 class="product-name">Coffee Holder (FREE)</h3>
+            <p class="product-desc">A stylish and functional accessory to neatly organize your favorite coffee pods or sachets.</p>
+            <span class="product-price">FREE!</span>
+        </div>
+    </div>
+</section>
+
+    <!-- MENU SECTION CODE: -->
+<section class="menu-section" id="menu">
+    <h2 class="menu-title">Our Menu</h2>
+    <div class="menu-bg">
+        <div class="menu-card">
+            <h3 class="menu-category">Coffee Series</h3>
+            <ul class="menu-list menu-list--dual">
+                <li class="menu-list-header">
+                    <span class="item-name"></span>
+                    <span class="item-price hot-label">HOT</span>
+                    <span class="item-price cold-label">COLD</span>
+                </li>
+                <li class="menu-list-header">
+                    <span class="item-name"></span>
+                    <span class="item-price">12oz / 16oz</span>
+                    <span class="item-price">12oz / 16oz</span>
+                </li>
+                <li>
+                    <span class="item-name">Americano</span>
+                    <span class="item-price">₱100 / ₱110</span>
+                    <span class="item-price">₱100 / ₱140</span>
+                </li>
+                <li>
+                    <span class="item-name">Latte</span>
+                    <span class="item-price">₱110 / ₱130</span>
+                    <span class="item-price">₱130 / ₱160</span>
+                </li>
+                <li>
+                    <span class="item-name">Cappuccino</span>
+                    <span class="item-price">₱110 / ₱130</span>
+                    <span class="item-price">₱130 / ₱160</span>
+                </li>
+                <li>
+                    <span class="item-name">Mocha</span>
+                    <span class="item-price">₱110 / ₱130</span>
+                    <span class="item-price">₱130 / ₱160</span>
+                </li>
+                <li>
+                    <span class="item-name">White Mocha</span>
+                    <span class="item-price">₱110 / ₱140</span>
+                    <span class="item-price">₱130 / ₱170</span>
+                </li>
+                <li>
+                    <span class="item-name">Vanilla</span>
+                    <span class="item-price">₱110 / ₱130</span>
+                    <span class="item-price">₱130 / ₱160</span>
+                </li>
+                <li>
+                    <span class="item-name">Hazelnut</span>
+                    <span class="item-price">₱110 / ₱130</span>
+                    <span class="item-price">₱130 / ₱160</span>
+                </li>
+                <li>
+                    <span class="item-name">Spanish Latte</span>
+                    <span class="item-price">₱110 / ₱130</span>
+                    <span class="item-price">₱130 / ₱160</span>
+                </li>
+            </ul>
+
+ 
+        </div>
+
+        <div class="menu-card">           
+            <h2 class="menu-category">IN/Fused Coffee Series</h3>
+            <ul class="menu-list menu-list--dual">
+                <li class="menu-list-header">
+                    <span class="item-name"></span>
+                    <span class="item-price hot-label">HOT</span>
+                    <span class="item-price cold-label">COLD</span>
+                </li>
+                <li class="menu-list-header">
+                    <span class="item-name"></span>
+                    <span class="item-price">12oz / 16oz</span>
+                    <span class="item-price">12oz / 16oz</span>
+                </li>
+                <li>
+                    <span class="item-name">Taro</span>
+                    <span class="item-price">₱100 / ₱110</span>
+                    <span class="item-price">₱130 / ₱160</span>
+                </li>
+                <li>
+                    <span class="item-name">Banana</span>
+                    <span class="item-price">₱110 / ₱130</span>
+                    <span class="item-price">₱130 / ₱160</span>
+                </li>
+                <li>
+                    <span class="item-name">Strawberry</span>
+                    <span class="item-price">₱110 / ₱130</span>
+                    <span class="item-price">₱130 / ₱160</span>
+                </li>
+                <li>
+                    <span class="item-name">Honeydew Matcha</span>
+                    <span class="item-price">₱110 / ₱150</span>
+                    <span class="item-price">₱130 / ₱180</span>
+                </li>
+                <li>
+                    <span class="item-name">Mango</span>
+                    <span class="item-price">₱110 / ₱130</span>
+                    <span class="item-price">₱130 / ₱160</span>
+                </li>
+            </ul>
+            </ul>
+            <h2 class="menu-category">Barista Drinks Series</h3>
+            <ul class="menu-list menu-list--dual">
+                <li class="menu-list-header">
+                    <span class="item-name"></span>
+                    <span class="item-price hot-label">HOT</span>
+                    <span class="item-price cold-label">COLD</span>
+                </li>
+                <li class="menu-list-header">
+                    <span class="item-name"></span>
+                    <span class="item-price">12oz / 16oz</span>
+                    <span class="item-price">12oz / 16oz</span>
+                </li>
+                <li>
+                    <span class="item-name">Americano</span>
+                    <span class="item-price">₱100 / ₱110</span>
+                    <span class="item-price">₱100 / ₱140</span>
+                </li>
+                <li>
+                    <span class="item-name">Latte</span>
+                    <span class="item-price">₱110 / ₱130</span>
+                    <span class="item-price">₱130 / ₱160</span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="menu-card">
+            <h2 class="menu-category">Silog Meals</h3>
+            <ul class="menu-list">
+                <li class="menu-list-header">
+                    <span class="item-name"></span>
+                    <span class="item-price hot-label">Prices:</span>
+                </li>
+                <li>
+                    <span class="item-name">Spicy Tapsilog</span>
+                    <span class="item-price">₱160</span>
+                </li>
+                <li>
+                    <span class="item-name">Tapsilog</span>
+                    <span class="item-price">₱160</span>
+                </li>
+                <li>
+                    <span class="item-name">Hotsilog</span>
+                    <span class="item-price">₱130</span>
+                </li>
+                <li>
+                    <span class="item-name">Bangsilog</span>
+                    <span class="item-price">₱130</span>
+                </li>
+                <li>
+                    <span class="item-name">Tocilog</span>
+                    <span class="item-price">₱140</span>
+                </li>
+                <li>
+                    <span class="item-name">Longsilog</span>
+                    <span class="item-price">₱140</span>
+                </li>
+                <li>
+                    <span class="item-name">Liempo</span>
+                    <span class="item-price">₱150</span>
+                </li>
+                <li>
+                    <span class="item-name">Lenchon Kawali</span>
+                    <span class="item-price">₱150</span>
+                </li>
+                <li>
+                    <span class="item-name">Hungarian</span>
+                    <span class="item-price">₱165</span>
+                </li>
+                <li>
+                    <span class="item-name">Spam</span>
+                    <span class="item-price">₱150</span>
+                </li>
+            </ul>
+        </div>
+        
+    </div>
+</section>
+
+    <!-- ORDER SECTION CODE: RICH-->
+    <section class="order-section" id="order">
+        <h2 class="order-title">Order</h2>
+    </section>
+
+
+<!-- ABOUT SECTION CODE: -->
+<section class="about-section" id="about">
+    <h2 class="about-title">About Us</h2>
+    <div class="about-content">
+        <div class="about-image-slider">
+            <input type="radio" name="about-slider" id="about-slide1" checked>
+            <input type="radio" name="about-slider" id="about-slide2">
+            <input type="radio" name="about-slider" id="about-slide3">
+            <input type="radio" name="about-slider" id="about-slide4">
+
+            <div class="about-slides">
+                <img src="https://scontent.fmnl4-7.fna.fbcdn.net/v/t39.30808-6/472819871_122124244922581986_4373037268482094156_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=833d8c&_nc_ohc=IyeOaiuHuK4Q7kNvwH5IPL-&_nc_oc=AdkhH7Ih1Tw48BKsZhsA9uhJa-6kup6Ip5tHt_SkVwjkyPvBHHgQ7AvmoVClKDCs-UM&_nc_zt=23&_nc_ht=scontent.fmnl4-7.fna&_nc_gid=V3QWk1UgTZ7C9rZFaW_C0A&oh=00_AfPGgk9Ns2VuOrGOm_IJEVpxNXWt3P5tlIzkpazpD9nHhQ&oe=68699788" alt="Our Coffee Shop" class="about-slide about-slide1">
+                <img src="https://scontent.fmnl4-1.fna.fbcdn.net/v/t39.30808-6/471371756_122121332228581986_8249633252164611395_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=103&ccb=1-7&_nc_sid=833d8c&_nc_ohc=VhrNdj2tj-cQ7kNvwHGLH7c&_nc_oc=AdmkC2gUS4TjiOCjKQLXwtCiFk-CmtALhCK829TGVp6eGiJu9PD_ggt7R2T1Pt19MBI&_nc_zt=23&_nc_ht=scontent.fmnl4-1.fna&_nc_gid=R299x24POkbKFFOY75WbPw&oh=00_AfNeNoxr9sDSYsn3Z47TqmCW0eHWy2M7RBbLUKy5G0P0Hw&oe=68699414" alt="In-Store Coffee Shop" class="about-slide about-slide2">
+                <img src="https://scontent.fmnl4-3.fna.fbcdn.net/v/t39.30808-6/471365829_122121333344581986_3203890049632868743_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_ohc=bIfKsDgJ9TQQ7kNvwED-Kei&_nc_oc=AdlrAsQTGq1wy3WSjUYWc5oysEKn0dBZ3iMxE-CIpkxXdWUV5cFFzy607O6JlrO5XZM&_nc_zt=23&_nc_ht=scontent.fmnl4-3.fna&_nc_gid=rPG2841VlJato2Kh8rwtdg&oh=00_AfPLZNG-Bybwen3Jth5GqRpBRwlEO3WJYh7cAO07fssa8w&oe=68699C0C" alt="In-Store Coffee Shop" class="about-slide about-slide3">
+                <img src="https://scontent.fmnl4-2.fna.fbcdn.net/v/t39.30808-6/473418391_122124959948581986_8489765653202734772_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_ohc=7iAsaIUyZ3QQ7kNvwG_UjO0&_nc_oc=AdnV9uSm4UMc5rE-bgJ2TioavjalGC6A79lIe7qtXmriaWA_BmGUJXx2qfRxk4VE-8Y&_nc_zt=23&_nc_ht=scontent.fmnl4-2.fna&_nc_gid=SX2ylCdkX5S-UKCx74FvyA&oh=00_AfNEVqfP4YQH0nv-S21YHaZvjhZpGg9fPlDhqeAjsYAxnA&oe=68696863" alt="In-Store Coffee Shop" class="about-slide about-slide4">
+            </div>
+            <div class="about-slider-nav">
+                <label for="about-slide1"></label>
+                <label for="about-slide2"></label>
+                <label for="about-slide3"></label>
+                <label for="about-slide4"></label>
+            </div>
+        </div>
+        <div class="about-text">
+            <h3>Welcome to IN/Fuse Cafe</h3>
+            <p>
+                Nestled in the heart of the city, IN/Fuse Cafe is your cozy escape for handcrafted coffee, delicious pastries, and warm smiles. Our journey began with a passion for bringing people together over the perfect cup, using only ethically sourced beans and local ingredients.
+            </p>
+            <p>
+                Whether you’re seeking a quiet nook to work, a spot to catch up with friends, or simply a moment of calm, our doors are always open. Every cup is brewed with care, and every guest is part of our family.
+            </p>
+            <div class="about-icons">
+                <div>
+                    <img src="https://kunjaninaples.com/cdn/shop/articles/resting-roasted-coffee.jpg?v=1635539227" alt="Coffee Beans">
+                    <span>Freshly Roasted Beans</span>
+                </div>
+                <div>
+                    <img src="https://traveltolyon.com/wp-content/uploads/2024/09/french-pastries-breakfast.jpg" alt="Pastries">
+                    <span>Homemade Pastries</span>
+                </div>
+                <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPfUHsUJqmNTDFVMjJ7FWpKAE3jB0yvMbhJw&s" alt="Community">
+                    <span>Community Focused</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- TESTIMONIAL SECTION CODE: -->
+<section class="testimonial-section" id="testimonial">
+    <h2 class="testimonial-title">Testimonials</h2>
+    <div class="testimonial-slider">
+        <input type="radio" name="slider" id="t-1" checked>
+        <input type="radio" name="slider" id="t-2">
+        <input type="radio" name="slider" id="t-3">
+
+        <div class="testimonials">
+            <!-- Slide 1 -->
+            <div class="testimonial-slide slide1">
+                <div class="testimonial">
+                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="User 1">
+                    <div class="stars">★★★★★</div>
+                    <p>"The coffee here is amazing and the ambiance is perfect for studying or relaxing. Highly recommended!"</p>
+                    <h4>Jane Doe</h4>
+                    <span>Student</span>
+                </div>
+                <div class="testimonial">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="User 2">
+                    <div class="stars">★★★★☆</div>
+                    <p>"IN/FUSE Cafe is my go-to spot for meetings. The staff are friendly and the drinks are top-notch!"</p>
+                    <h4>John Smith</h4>
+                    <span>Entrepreneur</span>
+                </div>
+                <div class="testimonial">
+                    <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="User 3">
+                    <div class="stars">★★★★★</div>
+                    <p>"Love the pastries and the cozy vibe. I always leave with a smile!"</p>
+                    <h4>Maria Lopez</h4>
+                    <span>Designer</span>
+                </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="testimonial-slide slide2">
+                <div class="testimonial">
+                    <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="User 4">
+                    <div class="stars">★★★★★</div>
+                    <p>"Great place to unwind after work. The staff always greet me with a smile."</p>
+                    <h4>Alex Tan</h4>
+                    <span>Engineer</span>
+                </div>
+                <div class="testimonial">
+                    <img src="https://randomuser.me/api/portraits/women/22.jpg" alt="User 5">
+                    <div class="stars">★★★★☆</div>
+                    <p>"Their matcha latte is the best in town. Cozy and clean environment."</p>
+                    <h4>Emily Cruz</h4>
+                    <span>Writer</span>
+                </div>
+                <div class="testimonial">
+                    <img src="https://randomuser.me/api/portraits/men/12.jpg" alt="User 6">
+                    <div class="stars">★★★★★</div>
+                    <p>"Affordable prices and delicious food. I come here every weekend!"</p>
+                    <h4>Michael Reyes</h4>
+                    <span>Photographer</span>
+                </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="testimonial-slide slide3">
+                <div class="testimonial">
+                    <img src="https://randomuser.me/api/portraits/women/12.jpg" alt="User 7">
+                    <div class="stars">★★★★★</div>
+                    <p>"The WiFi is fast and the seats are comfy. Perfect for remote work."</p>
+                    <h4>Sarah Lim</h4>
+                    <span>Freelancer</span>
+                </div>
+                <div class="testimonial">
+                    <img src="https://randomuser.me/api/portraits/men/28.jpg" alt="User 8">
+                    <div class="stars">★★★★☆</div>
+                    <p>"I love the variety of drinks and the friendly atmosphere."</p>
+                    <h4>Chris Villanueva</h4>
+                    <span>Barista</span>
+                </div>
+                <div class="testimonial">
+                    <img src="https://randomuser.me/api/portraits/women/36.jpg" alt="User 9">
+                    <div class="stars">★★★★★</div>
+                    <p>"A hidden gem! The desserts are to die for."</p>
+                    <h4>Patricia Gomez</h4>
+                    <span>Chef</span>
+                </div>
+            </div>
+        </div>
+        <div class="slider-nav">
+            <label for="t-1"></label>
+            <label for="t-2"></label>
+            <label for="t-3"></label>
+        </div>
+    </div>
+</section>
+
+
+    <!-- CONTACT US SECTION CODE: -->
+ <section class="contactus-section" id="contactUs">
+    <h2 class="contactus-title">Contact Us</h2>
+    <div class="footer">
+        <div class="col-1">
+            <h3>USEFUL LINKS</h3>
+            <a href="#home">Home</a>
+            <a href="#product">Products</a>
+            <a href="#menu">Menu</a>
+            <a href="#order">Order</a>
+            <a href="#about">About</a>
+            <a href="#testimonial">Testimonial</a>
+            <a href="#contactUs">Contact Us</a>
+        </div>
+        <div class="col-2">
+            <h3>MESSAGE US!</h3>
+    <form>
+        <input type="email" placeholder="Enter Email Address" required>
+        <br>
+        <textarea placeholder="Enter a message!" required></textarea>
+        <br>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+        </div>
+        <div class="col-3">
+            <h3>CONTACT</h3>
+            <p>Phone Number: 09811966106</p>
+            <p>Store Address: 12 Fuse, Marilao, Bulacan</p>
+            
+            <div class="social-icons">
+                <i class='bx bxl-facebook'></i>
+                <i class='bx bxl-instagram' ></i>
+                <i class='bx bxl-twitter' ></i>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+</body>
+</html>

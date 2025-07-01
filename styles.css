@@ -1,0 +1,916 @@
+* { /*adjusts the size of the website*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: -apple-system, sans-serif;
+}
+
+html {
+    font-size: 90%;
+    overflow-x: hidden;
+}
+
+/* HEADER SECTION CODE: */
+.header{
+    left: 0;
+    width: 100%;
+    right: 0;
+    padding: 0 40px;
+    background-color:whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    position: sticky;
+    background: #fff;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04); 
+    transition: all 0.5s ease;
+    font-family: 'Georgia', serif;
+    display: flex;
+    min-height: 90px;
+
+}
+
+.logo { /* space between image and text */
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+}
+.logo img{
+    width: 50px;
+    height: auto;
+    display: block;
+    text-decoration: none;
+}
+
+.logo-text {
+    font-size: 25px; /* Adjust as needed */
+    font-weight: bold; 
+    color: #222;
+}
+
+.logo-slash {
+    color: #8B5C2A; /* Choose your preferred brown shade */
+    font-weight: bold;
+}
+
+
+
+/* makes the nav bar aligned properly */
+.navbar a {
+    position: relative;
+    font-size: 1.1em;
+    color: black;
+    text-decoration: none;
+    margin-left: 30px;
+}
+
+/* this adds effects to the nav bar kapag hinover */
+.navbar a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background-color: black;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: .5s ease;
+}
+
+/* also this one.. */
+.navbar a:hover::after {
+    transform: scaleX(1);
+}
+
+/* HOME SECTION CODE: */
+.home {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    /* background: url(https://tint.creativemarket.com/Q-FiPgDeANtdKf1ljqQ_LaNMMEIXhIQAXC-A6nR48Ek/width:1820/height:1214/gravity:ce/rt:fill-down/el:1/preset:cm_watermark_retina/czM6Ly9maWxlcy5jcmVhdGl2ZW1hcmtldC5jb20vaW1hZ2VzL3NjcmVlbnNob3RzL3Byb2R1Y3RzLzY4NS82ODUzLzY4NTM2NDAvcGRpang0cjN2c2NseGFyZ3VkeG9qcGpkeWNtdGJocWx2cDN3dHZkdjBoc3J5bXRiaWQ3czBteGtnMXZxZ2pkbS1vLmpwZw?1710130301) no-repeat; */
+    background: url(https://www.oddkincoffee.com/cdn/shop/files/Oddkin-March-LR-214.jpg?v=1744197924&width=1946) no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 100px 0;;
+}
+
+.content{
+    max-width: 600px;
+    color: #fff;
+}
+
+.content h2{
+    font-size: 4em;
+}
+
+.content p{
+    font-weight:400px;
+}
+
+/* PRODUCTS SECTION CODE: */
+.products-section {
+    background: #f8f5f2;
+    padding: 60px 0 40px 0;
+    text-align: center;
+}
+
+.product-title {
+    font-size: 2.5rem;
+    color: #6b3e26;
+    margin-bottom: 40px;
+    font-family: 'Georgia', serif;
+    letter-spacing: 1px;
+}
+
+.products-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+}
+
+.product-card {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(107, 62, 38, 0.10);
+    padding: 28px 22px 22px 22px;
+    width: 260px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 8px 32px rgba(107, 62, 38, 0.18);
+}
+
+.product-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 18px;
+    border: 3px solid #e0c3a3;
+    background: #f3e8dd;
+}
+
+.product-name {
+    font-size: 1.3rem;
+    color: #6b3e26;
+    margin: 10px 0 6px 0;
+    font-family: 'Georgia', serif;
+}
+
+.product-desc {
+    font-size: 1rem;
+    color: #7c5a43;
+    margin-bottom: 14px;
+    min-height: 48px;
+}
+
+.product-price {
+    font-size: 1.1rem;
+    color: #a67c52;
+    font-weight: bold;
+    background: #f3e8dd;
+    padding: 6px 18px;
+    border-radius: 12px;
+    margin-top: auto;
+}
+
+
+/* MENU SECTION CODE: */
+.menu-section {
+    padding: 60px 0;
+    position: relative;
+}
+
+.menu-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #6b3e26;
+    font-family: 'Georgia', serif;
+    margin-bottom: 32px;
+    letter-spacing: 1px;
+}
+
+.menu-bg {
+    background: url(https://t4.ftcdn.net/jpg/06/58/43/65/360_F_658436525_GN0zI0PnAkDdSmAdmjG6CzJZlb2Ti0fK.jpg) center/cover no-repeat;
+    min-height: 500px;
+    display: flex;
+    flex-wrap: wrap;           /* Allow cards to wrap to next line */
+    align-items: flex-start;   /* Align cards to the top */
+    justify-content: center;   /* Center cards horizontally */
+    gap: 32px;                 /* Space between cards */
+    padding: 40px 0;
+}
+
+.menu-card {
+    background: rgba(255, 250, 240, 0.92);
+    border-radius: 24px;
+    box-shadow: 0 8px 32px rgba(107, 62, 38, 0.18);
+    padding: 40px 36px;
+    width: 100%;
+    max-width: 420px;
+    min-width: 280px;
+    margin: 0 auto;
+    backdrop-filter: blur(2px);
+    flex: 1 1 320px; /* Allow cards to shrink/grow */
+}
+
+.menu-category {
+    color: #8B5C2A;
+    font-size: 1.3rem;
+    margin-top: 18px;
+    margin-bottom: 10px;
+    font-family: 'Georgia', serif;
+    border-bottom: 1.5px solid #e0c3a3;
+    padding-bottom: 4px;
+    letter-spacing: 0.5px;
+}
+
+.menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 18px 0;
+}
+
+.menu-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    font-size: 1.08rem;
+    color: #6b3e26;
+}
+
+.menu-list li:last-child {
+    border-bottom: none;
+}
+
+/* Dual-column menu styles */
+.menu-list--dual li {
+    display: grid;
+    grid-template-columns: 1.5fr 1.3fr 1.3fr; /* Make price columns wider */
+    align-items: center;
+    padding: 8px 0;
+    font-size: 1.08rem;
+    color: #6b3e26;
+    column-gap: 10px;
+}
+
+.menu-list--dual li:last-child {
+    border-bottom: none;
+}
+
+.menu-list-header {
+    font-weight: bold;
+    background: #f3e8dd;
+    color: #8B5C2A;
+    border-radius: 8px;
+}
+
+.hot-label {
+    color: #b87333;
+    font-weight: bold;
+}
+
+.cold-label {
+    color: #3b7c8c;
+    font-weight: bold;
+}
+
+.item-name {
+    font-weight: 500;
+    font-family: 'Georgia', serif;
+}
+
+.item-price {
+    font-weight: bold;
+    color: #a67c52;
+    background: #f3e8dd;
+    padding: 2px 14px;
+    border-radius: 12px;
+    font-size: 1rem;
+    white-space: nowrap; /* Prevent line breaks */
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .menu-bg {
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+    }
+    .menu-card {
+        max-width: 98vw;
+        width: 98vw;
+        min-width: 0;
+        padding: 24px 8px;
+    }
+    .menu-title {
+        font-size: 2rem;
+    }
+}
+
+
+/* ORDER SECTION CODE: */
+/* .order-section{
+
+} */
+
+.order-title{
+    text-align: center;
+    font-size: 2.5rem;
+    color: #6b3e26;
+    font-family: 'Georgia', serif;
+    margin-bottom: 32px;
+    letter-spacing: 1px;
+}
+
+/* ABOUT SECTION CODE: */
+.about-section{
+    padding: 48px;
+    text-align: center;
+
+} 
+
+.about-title{
+    text-align: center;
+    font-size: 2.5rem;
+    color: #6b3e26;
+    font-family: 'Georgia', serif;
+    margin-bottom: 32px;
+    letter-spacing: 1px;
+}
+
+/* ABOUT SECTION ENHANCED STYLES */
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+    max-width: 1100px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.about-image img {
+    width: 340px;
+    max-width: 90vw;
+    border-radius: 24px;
+    box-shadow: 0 8px 32px rgba(107, 62, 38, 0.13);
+    object-fit: cover;
+}
+
+.about-text {
+    max-width: 540px;
+    text-align: left;
+    margin: 0 auto;
+}
+
+.about-text h3 {
+    color: #8B5C2A;
+    font-family: 'Georgia', serif;
+    font-size: 2rem;
+    margin-bottom: 18px;
+    letter-spacing: 1px;
+}
+
+.about-text p {
+    color: #7c5a43;
+    font-size: 1.15rem;
+    margin-bottom: 16px;
+    line-height: 1.7;
+}
+
+.about-icons {
+    display: flex;
+    gap: 28px;
+    margin-top: 24px;
+}
+
+.about-icons div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1rem;
+    color: #6b3e26;
+}
+
+.about-icons img {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 8px;
+    background: #f3e8dd;
+    border-radius: 50%;
+    padding: 8px;
+    box-shadow: 0 2px 8px rgba(107,62,38,0.08);
+}
+
+@media (max-width: 900px) {
+    .about-content {
+        flex-direction: column;
+        gap: 32px;
+        padding: 0 8vw;
+    }
+    .about-text {
+        text-align: center;
+    }
+    .about-icons {
+        justify-content: center;
+    }
+}
+
+.about-image-slider {
+    position: relative;
+    width: 340px;
+    max-width: 90vw;
+    min-height: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 18px;
+}
+.about-image-slider input[type="radio"] {
+    display: none;
+}
+.about-slides {
+    position: relative;
+    width: 100%;
+    height: 340px;
+    max-width: 100%;
+    min-height: 220px;
+}
+.about-slide {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 340px;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 24px;
+    box-shadow: 0 8px 32px rgba(107, 62, 38, 0.13);
+    opacity: 0;
+    transition: opacity 0.5s;
+    z-index: 1;
+}
+#about-slide1:checked ~ .about-slides .about-slide1,
+#about-slide2:checked ~ .about-slides .about-slide2,
+#about-slide3:checked ~ .about-slides .about-slide3,
+#about-slide4:checked ~ .about-slides .about-slide4 {
+    opacity: 1;
+    z-index: 2;
+}
+.about-slider-nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 16px;
+}
+.about-slider-nav label {
+    display: block;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #e0c3a3;
+    cursor: pointer;
+    border: 2px solid #fff;
+    box-shadow: 0 2px 8px rgba(107,62,38,0.08);
+    transition: background 0.3s;
+}
+#about-slide1:checked ~ .about-slider-nav label[for="about-slide1"],
+#about-slide2:checked ~ .about-slider-nav label[for="about-slide2"],
+#about-slide3:checked ~ .about-slider-nav label[for="about-slide3"],
+#about-slide4:checked ~ .about-slider-nav label[for="about-slide4"] {
+    background: #6b3e26;
+    border-color: #a67c52;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .about-image-slider, .about-slides {
+        width: 100%;
+        min-height: 180px;
+        height: 220px;
+        max-width: 98vw;
+    }
+    .about-slide {
+        height: 220px;
+    }
+}
+@media (max-width: 600px) {
+    .about-image-slider, .about-slides {
+        min-height: 120px;
+        height: 140px;
+    }
+    .about-slide {
+        height: 140px;
+    }
+}
+
+
+/* TESTIMONIAL SECTION CODE: */
+.testimonial-section{
+    padding: 48px;
+    text-align: center;
+    background: #f8f5f2;
+
+
+}
+
+.testimonial-title{
+    text-align: center;
+    font-size: 2.5rem;
+    color: #6b3e26;
+    font-family: 'Georgia', serif;
+    margin-bottom: 32px;
+    letter-spacing: 1px;
+} 
+
+/* Responsive Testimonial Slider */
+/* Testimonial Slider with 3 reviews per slide */
+.testimonial-slider {
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.testimonials {
+    position: relative;
+    width: 100%;
+    min-height: 340px;
+}
+
+.testimonial-slide {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    opacity: 0;
+    position: absolute;
+    left: 0; right: 0; top: 0;
+    transition: opacity 0.5s;
+    z-index: 1;
+    pointer-events: none;
+}
+
+#t-1:checked ~ .testimonials .slide1,
+#t-2:checked ~ .testimonials .slide2,
+#t-3:checked ~ .testimonials .slide3 {
+    opacity: 1;
+    position: relative;
+    z-index: 2;
+    pointer-events: auto;
+}
+
+.testimonial {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(107, 62, 38, 0.10);
+    padding: 32px 18px 28px 18px;
+    text-align: center;
+    width: 260px;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimonial img {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 18px;
+    border: 3px solid #e0c3a3;
+    background: #f3e8dd;
+}
+
+.stars {
+    color: #FFD700;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    user-select: none;
+}
+
+.testimonial p {
+    font-size: 1.1rem;
+    color: #7c5a43;
+    margin-bottom: 16px;
+    font-style: italic;
+}
+
+.testimonial h4 {
+    margin: 0;
+    color: #6b3e26;
+    font-family: 'Georgia', serif;
+    font-size: 1.15rem;
+    font-weight: bold;
+}
+
+.testimonial span {
+    display: block;
+    color: #a67c52;
+    font-size: 0.98rem;
+    margin-top: 2px;
+    letter-spacing: 0.5px;
+}
+
+/* Hide radio buttons */
+.testimonial-slider input[type="radio"] {
+    display: none;
+}
+
+/* Slider navigation dots */
+.slider-nav {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 24px;
+}
+
+.slider-nav label {
+    display: block;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #e0c3a3;
+    cursor: pointer;
+    transition: background 0.3s;
+    border: 2px solid #fff;
+    box-shadow: 0 2px 8px rgba(107,62,38,0.08);
+}
+
+#t-1:checked ~ .slider-nav label[for="t-1"],
+#t-2:checked ~ .slider-nav label[for="t-2"],
+#t-3:checked ~ .slider-nav label[for="t-3"] {
+    background: #6b3e26;
+    border-color: #a67c52;
+}
+
+/* Responsive */
+@media (max-width: 1000px) {
+    .testimonial-slider {
+        max-width: 98vw;
+    }
+    .testimonial-slide {
+        gap: 12px;
+    }
+    .testimonial {
+        width: 220px;
+        padding: 22px 6vw 18px 6vw;
+    }
+}
+@media (max-width: 700px) {
+    .testimonial-slide {
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+    }
+    .testimonial {
+        width: 90vw;
+        max-width: 340px;
+    }
+}
+
+
+/* CONTACT SECTION CODE: */
+.contactus-section {
+    background: #493628;
+    padding: 48px;
+    text-align: center;
+
+}
+
+.contactus-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #fff;
+    font-family: 'Georgia', serif;
+    margin-bottom: 32px;
+    letter-spacing: 1px;
+}
+
+.footer{
+    margin: 40px auto 0 auto;         /* Center the footer horizontally */
+    width: 100%;
+    max-width: 1100px;                /* Limit the width for better centering */
+    padding: 60px 5%;
+    display: flex;
+    justify-content: center;          /* Center the columns as a group */
+    align-items: flex-start;
+    gap: 40px;                        /* Space between columns */
+    color: #efefef;
+    background: none;
+    box-sizing: border-box;
+}
+
+.footer div{
+    text-align: center;
+    flex: 1 1 220px;                  /* Make columns flexible and equal width */
+
+}
+
+.col-2{
+    flex-grow: 2;
+}
+
+.col-2 form input {
+    width: 90%;                       /* Responsive input width */
+    max-width: 400px;
+}
+
+.footer div h3{
+    font-weight: 600;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    font-family: 'Georgia', serif;
+
+}
+
+.col-1 a{
+    display: block;
+    text-decoration: none;
+    color: #efefef;
+    margin-bottom: 10px;
+    font-family: 'Georgia', serif;
+}
+
+
+.col-3 p{
+    font-family: 'Georgia', serif;
+    font-weight: 200;
+    letter-spacing: 1px;
+}
+
+form input{
+    width: 400px;
+    height: 45px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 1px;
+    outline: none;
+    border: none;
+    font-family: 'Georgia', serif;
+
+}
+
+form button{
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-size: 15px ;
+    cursor: pointer; 
+    color: #efefef;
+    font-family: 'Georgia', serif;
+}
+
+
+.social-icons{
+    margin-top: 30px;
+}
+
+.social-icons i {
+    font-size: 22px;
+    margin: 10px;
+    cursor: pointer;
+
+}
+
+
+@media (max-width: 900px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+        padding: 40px 2%;
+    }
+    .footer div {
+        width: 100%;
+        max-width: 500px;
+    }
+}
+
+form textarea {
+    width: 400px;
+    min-height: 45px;
+    max-width: 100%;
+    min-width: 90%;
+    height: 90px;
+    border-radius: 10px;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 1px;
+    outline: none;
+    border: none;
+    font-family: 'Georgia', serif;
+    padding: 12px;
+    resize: vertical; /* Allows user to adjust height */
+    box-sizing: border-box;
+}
+/* Responsive for textarea */
+@media (max-width: 900px) {
+    form textarea {
+        width: 90%;
+        max-width: 500px;
+    }
+}
+
+/* LOGIN/SIGNUP */
+
+/* BODY OF LOGIN_SIGNUP class */
+.body-login-signup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, #e2e2e2,#c9d6ff);
+    color: #333;
+
+}
+
+.container{
+    margin: 0 15px;
+}
+
+.form-box{
+    width: 100%;
+    max-width: 450px;
+    padding: 30px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.h2-login-signup{
+    font-size: 34px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+input{
+    width: 100%;
+    padding: 12px;
+    background: #eee;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    columns: #333;
+    margin-bottom: 20px;
+}
+
+#login-form button[type="submit"], .button-login-signup {
+    width: 100%;
+    padding: 12px;
+    background: #7494ec;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 20px;
+    transition: 0.5s;
+}
+
+.button-login-signup:hover{
+    background: #6884d3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
